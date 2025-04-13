@@ -1,7 +1,7 @@
 import AppLayoutTemplate from '@/layouts/app/app-sidebar-layout';
 import { type BreadcrumbItem } from '@/types';
 import { type ReactNode } from 'react';
-
+// import "geist/dist/fonts/var/geist-sans.css";
 interface AppLayoutProps {
     children: ReactNode;
     breadcrumbs?: BreadcrumbItem[];
