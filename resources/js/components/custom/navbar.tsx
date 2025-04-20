@@ -51,7 +51,7 @@ export const MobileNavigationMenu = () => {
 
 export const DesktopNavigationMenu = () => {
     return (
-        <div className="mx-auto flex w-[95%] items-center justify-between">
+        <div className="mx-auto flex w-[95%] items-center justify-between pb-6 lg:pb-10">
             <div className="text-xl font-extrabold md:text-3xl">
                 {' '}
                 <p>

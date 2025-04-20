@@ -2,10 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\travelController;
 
-Route::get('/', function () {
-    return Inertia::render('welcome');
-})->name('home');
+Route::get('/', [travelController::class,'index'])->name('home');
+Route::get('/about', [travelController::class, 'about'])->name('about');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
