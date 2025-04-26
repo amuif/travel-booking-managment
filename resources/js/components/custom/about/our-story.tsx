@@ -1,6 +1,3 @@
-import { Code, FileText, Rocket } from 'lucide-react';
-import { useState } from 'react';
-
 import { ProgressStep, ProgressStepper } from '@/components/ui/stepper';
 
 const steps = [
@@ -25,7 +22,7 @@ const steps = [
 ];
 
 const OurStory = () => {
-    const [activeStep, setActiveStep] = useState(1);
+
     return (
         <div>
             <h3 className="text-2xl lg:text-5xl">Our Story</h3>
@@ -35,11 +32,11 @@ const OurStory = () => {
                 only five centuries, but also the leap into electronic typesetting, remaining.
             </p>
 
-            <ProgressStepper activeStep={activeStep}>
+            <ProgressStepper >
                 {steps.map((step, index) => (
+
                     <div
                         key={index}
-                        onClick={() => setActiveStep(index)}
                         className="hover:bg-muted/50 -ml-2  rounded-lg 2 transition-colors"
                     >
                         <ProgressStep
@@ -47,7 +44,7 @@ const OurStory = () => {
                             name={step.name}
                             description={step.description}
                             // icon={step.icon}
-                            isCompleted={index < activeStep}
+                            isCompleted={index <2}
                         />
                     </div>
                 ))}

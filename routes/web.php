@@ -6,7 +6,6 @@ use App\Http\Controllers\travelController;
 
 Route::get('/', [travelController::class,'index'])->name('home');
 Route::get('/about', [travelController::class, 'about'])->name('about');
-
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         return Inertia::render('dashboard');

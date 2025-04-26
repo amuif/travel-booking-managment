@@ -23,6 +23,7 @@ export default function Home({ trips, users }: { trips: TTrips[]; users: TUser[]
             </Head>
             <div className="flex flex-col gap-10">
                 {' '}
+
                 <Landing />
                 <HoverTextsOnVideo />
             </div>
