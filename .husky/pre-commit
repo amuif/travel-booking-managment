@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# Add your build and test commands here
-npm run build
 npx lint-staged
+npm run build
