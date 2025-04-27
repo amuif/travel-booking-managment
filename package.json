@@ -9,7 +9,7 @@
     "format:check": "prettier --check resources/",
     "lint": "eslint . --fix",
     "types": "tsc --noEmit",
-    "prepare": "husky"
+    "prepare": "husky && husky install"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
@@ -66,14 +66,13 @@
     "typescript": "^5.7.2",
     "vite": "^6.0"
   },
-       "husky": {
-         "hooks": {
-             "pre-commit": "lint-staged"
-         }
-     },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "4.9.5",
     "@tailwindcss/oxide-linux-x64-gnu": "^4.0.1",
     "lightningcss-linux-x64-gnu": "^1.29.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.resources/": "prettier --write"
   }
 }

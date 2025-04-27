@@ -3,3 +3,4 @@
 
 # Add your build and test commands here
 npm run build
+npx lint-staged
