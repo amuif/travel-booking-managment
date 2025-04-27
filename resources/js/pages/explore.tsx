@@ -1,13 +1,5 @@
-import React from 'react'
+const Explore = () => {
+    return <div></div>;
+};
 
-const Explore = ({flights}:any) => {
-
-  console.log(flights)
-  return (
-    <div>
-        
-    </div>
-  )
-}
-
-export default Explore
+export default Explore;

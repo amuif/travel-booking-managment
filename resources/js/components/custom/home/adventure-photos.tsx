@@ -1,6 +1,5 @@
-import { cn } from '@/lib/utils';
-// import { Marquee } from "@/registry/magicui/marquee";
 import { Marquee } from '@/components/ui/marquee';
+import { cn } from '@/lib/utils';
 export const AdventurePhoto = () => {
     return (
         <div className="flex flex-col gap-5 px-5 lg:gap-10">
@@ -87,7 +86,7 @@ const reviews = [
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
 
-const ReviewCard = ({ img, name, username, body }: { img: string; name: string; username: string; body: string }) => {
+const ReviewCard = ({ img }: { img: string }) => {
     return (
         <figure
             className={cn(

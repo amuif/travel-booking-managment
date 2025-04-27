@@ -1,7 +1,7 @@
-import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 export default function BackgroundVideo() {
-    const { scrollY } = useScroll();
+    // const { scrollY } = useScroll();
     // useMotionValueEvent(scrollY, 'change', (latest) => {
     //     console.log('Page scroll: ', latest);
     // });
@@ -22,7 +22,9 @@ export default function BackgroundVideo() {
             <div className="absolute top-0 left-0 z-10 h-full w-full bg-black/30" />
 
             <motion.div className="relative z-20 flex h-full items-center justify-center text-4xl font-bold text-white">Discover places</motion.div>
-            <motion.div className="relative z-20 flex h-full items-center justify-center text-4xl font-bold text-white">Hello on second of video</motion.div>
+            <motion.div className="relative z-20 flex h-full items-center justify-center text-4xl font-bold text-white">
+                Hello on second of video
+            </motion.div>
             <div className="relative z-20 flex h-full items-center justify-center text-4xl font-bold text-white">Hello on third of video</div>
         </motion.div>
     );

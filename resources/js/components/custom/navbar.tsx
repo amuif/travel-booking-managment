@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { ModeToggle } from '../mode-toggle';
 import { Button } from '../ui/button';
 
 interface menuItemsProps {
