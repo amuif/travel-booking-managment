@@ -17,4 +17,7 @@ class travelController extends Controller
     public function about(){
         return Inertia::render('about');
     }
+    public function explore() {
+        return Inertia::render('explore');
+    }
 }

@@ -3,9 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\travelController;
+use App\Http\controllers\FlightController;
 
 Route::get('/', [travelController::class,'index'])->name('home');
 Route::get('/about', [travelController::class, 'about'])->name('about');
+Route::get('/explore', [FlightController::class, 'index'])->name('explore');
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         return Inertia::render('dashboard');

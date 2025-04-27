@@ -66,6 +66,11 @@
     "typescript": "^5.7.2",
     "vite": "^6.0"
   },
+       "husky": {
+         "hooks": {
+             "pre-commit": "lint-staged"
+         }
+     },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "4.9.5",
     "@tailwindcss/oxide-linux-x64-gnu": "^4.0.1",

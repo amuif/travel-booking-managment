@@ -68,17 +68,17 @@ export default function AboutUsGallery() {
                         <img src='/cities/about_h.jpg' alt="our image" className='w-full h-full rounded-xl' />
                     </div>
                 </div>
-                <div className='h-full lg:h-[90%] p-1 border shadow-xl rounded-xl cursor-pointer hover:-translate-y-2 transition-all duration-300'>
+                <div className='h-full  p-1 border shadow-xl rounded-xl cursor-pointer hover:-translate-y-2 transition-all duration-300'>
                     <img src='/cities/about_big_v.jpg' alt="our image" className='w-full h-full rounded-xl' />
 
                 </div>
                 <div className='flex flex-col gap-2'>
 
                     <div className='p-1 h-full  rounded-xl shadow-xl hover:-translate-y-2 cursor-pointer transition-all duration-300'>
-                        <img src='/cities/about_h.jpg' alt="our image" className='w-full h-full rounded-xl' />
+                        <img src='/cities/smaller_h.jpg' alt="our image" className='w-full h-full rounded-xl' />
                     </div>
                     <div className='h-full lg:h-[60%] p-1 border shadow-xl rounded-xl cursor-pointer hover:-translate-y-2 transition-all duration-300'>
-                        <img src='/cities/mid-v.jpg' alt='our image' className='w-full h-full rounded-xl' />
+                        <img src='/cities/small-v.jpg' alt='our image' className='w-full h-full rounded-xl' />
                     </div>
 
                 </div>

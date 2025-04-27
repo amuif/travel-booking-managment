@@ -35,4 +35,9 @@ return [
         ],
     ],
 
+    'aviationstack' => [
+        'key' => env('AVIATIONSTACK_API_KEY'),
+        'base_url' => env('AVIATIONSTACK_BASE_URL'),
+    ],
+
 ];
