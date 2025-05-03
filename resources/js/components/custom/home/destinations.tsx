@@ -55,10 +55,7 @@ const Destinations = () => {
             <div className="embla w-full overflow-hidden" ref={emblaRef}>
                 <div className="embla__container flex pl-4">
                     {destinationData.map(({ id, country, description, price, src }) => (
-                        <div
-                            key={id}
-                            className="embla__slide mx-2 flex flex-col lg:flex-row w-full lg:w-1/3 flex-wrap "
-                        >
+                        <div key={id} className="embla__slide mx-2 flex w-full flex-col flex-wrap lg:w-1/3 lg:flex-row">
                             <div
                                 className={`relative h-96 w-full overflow-hidden rounded-lg ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
                                 draggable

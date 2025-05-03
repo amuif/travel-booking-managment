@@ -77,7 +77,7 @@ const Reviews = ({ users }: { users: TUser[] }) => {
                     {userComments.map((user) => (
                         <div
                             key={user.id}
-                            className="embla__slide shadow-2xl/50 mx-2 flex w-full flex-col flex-wrap rounded-2xl bg-white  lg:w-1/3 lg:flex-row"
+                            className="embla__slide shadow-2xl/50 mx-2 flex w-full flex-col flex-wrap rounded-2xl bg-white lg:w-1/3 lg:flex-row"
                         >
                             <div
                                 draggable
@@ -86,8 +86,8 @@ const Reviews = ({ users }: { users: TUser[] }) => {
                                 onMouseLeave={() => setIsDragging(false)}
                                 className={`relative flex flex-col gap-5 rounded-xl p-4 lg:gap-7 ${isDragging ? 'cursor-grabbing' : 'cursor-grab'} `}
                             >
-                                <div className="absolute -top-2 -right-4 size-14  text-primary">
-                                    <Quote className='' />
+                                <div className="text-primary absolute -top-2 -right-4 size-14">
+                                    <Quote className="" />
                                 </div>
                                 <p className="text-2xl">{user.comment}</p>
                                 <div className="bottom-0 flex h-full items-end justify-start">

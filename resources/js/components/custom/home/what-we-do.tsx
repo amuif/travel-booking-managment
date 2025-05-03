@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-
+import { Button } from '@/components/ui/button';
 
 const WhatWeDo = () => {
     return (
@@ -13,9 +12,10 @@ const WhatWeDo = () => {
                     </h3>
                 </div>
                 <p className="text-lg text-wrap text-gray-500 lg:text-2xl">
-                Your passion is what drives us. Whatever you want to hunt for rare truffles in Tuscany, track the Great Migration on a mobile camping safari, or learn aboriginal art from a Maori chief in New Zeland - we know how to make your dreams comes true.
+                    Your passion is what drives us. Whatever you want to hunt for rare truffles in Tuscany, track the Great Migration on a mobile
+                    camping safari, or learn aboriginal art from a Maori chief in New Zeland - we know how to make your dreams comes true.
                 </p>
-                <Button size="lg" className="bottom-0 flex w-fit p-7 text-2xl mt-6 shadow-xl/30">
+                <Button size="lg" className="shadow-xl/30 bottom-0 mt-6 flex w-fit p-7 text-2xl">
                     Let's explore
                 </Button>
             </div>

@@ -10,7 +10,8 @@
 
 @theme {
     /* --font-poppins:'Poppins' sans-serif, */
-    --font-sans:  'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans:
+        'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
     /* main colors */
     --primary: #3674b5;
@@ -85,13 +86,13 @@
 }
 
 :root {
-    --background: #F8F8F8;
+    --background: #f8f8f8;
     --foreground: oklch(0.145 0 0);
     --card: oklch(1 0 0);
     --card-foreground: oklch(0.145 0 0);
     --popover: oklch(1 0 0);
     --popover-foreground: oklch(0.145 0 0);
-    --primary: #45B97F;
+    --primary: #45b97f;
     --primary-foreground: #ffffff;
     --secondary: #578fca;
     --secondary-foreground: oklch(0.205 0 0);
@@ -127,7 +128,7 @@
     --card-foreground: oklch(0.985 0 0);
     --popover: oklch(0.145 0 0);
     --popover-foreground: oklch(0.985 0 0);
-    --primary: #45B97F;
+    --primary: #45b97f;
     --primary-foreground: #ffffff;
     --secondary: #578fca;
     --secondary-foreground: oklch(0.985 0 0);
@@ -167,45 +168,45 @@
 /* Add to your global CSS */
 .embla {
     position: relative;
-  }
+}
 
-  .embla__container {
+.embla__container {
     display: flex;
     will-change: transform;
-  }
+}
 
-  .embla__slide {
+.embla__slide {
     position: relative;
     min-width: 0; /* Important for flexbox */
     flex-shrink: 0; /* Prevent shrinking */
-  }
+}
 
-  @theme inline {
-    --animate-marquee:  marquee var(--duration) infinite linear;
-    --animate-marquee-vertical:  marquee-vertical var(--duration) linear infinite;
-  @keyframes marquee {
-  from {
-    transform:  translateX(0);
+@theme inline {
+    --animate-marquee: marquee var(--duration) infinite linear;
+    --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+    @keyframes marquee {
+        from {
+            transform: translateX(0);
         }
-  to {
-    transform:  translateX(calc(-100% - var(--gap)));
+        to {
+            transform: translateX(calc(-100% - var(--gap)));
         }
     }
-  @keyframes marquee-vertical {
-  from {
-    transform:  translateY(0);
+    @keyframes marquee-vertical {
+        from {
+            transform: translateY(0);
         }
-  to {
-    transform:  translateY(calc(-100% - var(--gap)));
+        to {
+            transform: translateY(calc(-100% - var(--gap)));
         }
     }
 }
 
-  @layer base {
-  * {
-    @apply border-border outline-ring/50;
+@layer base {
+    * {
+        @apply border-border outline-ring/50;
     }
-  body {
-    @apply bg-background text-foreground;
+    body {
+        @apply bg-background text-foreground;
     }
 }

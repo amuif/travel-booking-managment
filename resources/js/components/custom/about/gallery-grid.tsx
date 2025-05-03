@@ -57,32 +57,27 @@
 export default function AboutUsGallery() {
     return (
         <>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-2'>
-                <div className='flex flex-col gap-2'>
-                    <div className='h-80 lg:h-[60%] p-1 border shadow-xl rounded-xl cursor-pointer hover:-translate-y-2 transition-all duration-300'>
-                        <img src='/cities/mid-v.jpg' alt='our image' className='w-full h-full rounded-xl' />
-
-
+            <div className="grid grid-cols-1 gap-2 lg:grid-cols-3">
+                <div className="flex flex-col gap-2">
+                    <div className="h-80 cursor-pointer rounded-xl border p-1 shadow-xl transition-all duration-300 hover:-translate-y-2 lg:h-[60%]">
+                        <img src="/cities/mid-v.jpg" alt="our image" className="h-full w-full rounded-xl" />
                     </div>
-                    <div className='h-full p-1 rounded-xl shadow-xl hover:-translate-y-2 cursor-pointer transition-all duration-300'>
-                        <img src='/cities/about_h.jpg' alt="our image" className='w-full h-full rounded-xl' />
+                    <div className="h-full cursor-pointer rounded-xl p-1 shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <img src="/cities/about_h.jpg" alt="our image" className="h-full w-full rounded-xl" />
                     </div>
                 </div>
-                <div className='h-full  p-1 border shadow-xl rounded-xl cursor-pointer hover:-translate-y-2 transition-all duration-300'>
-                    <img src='/cities/about_big_v.jpg' alt="our image" className='w-full h-full rounded-xl' />
-
+                <div className="h-full cursor-pointer rounded-xl border p-1 shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <img src="/cities/about_big_v.jpg" alt="our image" className="h-full w-full rounded-xl" />
                 </div>
-                <div className='flex flex-col gap-2'>
-
-                    <div className='p-1 h-full  rounded-xl shadow-xl hover:-translate-y-2 cursor-pointer transition-all duration-300'>
-                        <img src='/cities/smaller_h.jpg' alt="our image" className='w-full h-full rounded-xl' />
+                <div className="flex flex-col gap-2">
+                    <div className="h-full cursor-pointer rounded-xl p-1 shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <img src="/cities/smaller_h.jpg" alt="our image" className="h-full w-full rounded-xl" />
                     </div>
-                    <div className='h-full lg:h-[60%] p-1 border shadow-xl rounded-xl cursor-pointer hover:-translate-y-2 transition-all duration-300'>
-                        <img src='/cities/small-v.jpg' alt='our image' className='w-full h-full rounded-xl' />
+                    <div className="h-full cursor-pointer rounded-xl border p-1 shadow-xl transition-all duration-300 hover:-translate-y-2 lg:h-[60%]">
+                        <img src="/cities/small-v.jpg" alt="our image" className="h-full w-full rounded-xl" />
                     </div>
-
                 </div>
-
             </div>
-        </>);
+        </>
+    );
 }

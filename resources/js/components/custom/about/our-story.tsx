@@ -22,7 +22,6 @@ const steps = [
 ];
 
 const OurStory = () => {
-
     return (
         <div>
             <h3 className="text-2xl lg:text-5xl">Our Story</h3>
@@ -32,19 +31,15 @@ const OurStory = () => {
                 only five centuries, but also the leap into electronic typesetting, remaining.
             </p>
 
-            <ProgressStepper >
+            <ProgressStepper>
                 {steps.map((step, index) => (
-
-                    <div
-                        key={index}
-                        className="hover:bg-muted/50 -ml-2  rounded-lg 2 transition-colors"
-                    >
+                    <div key={index} className="hover:bg-muted/50 2 -ml-2 rounded-lg transition-colors">
                         <ProgressStep
                             year={step.year}
                             name={step.name}
                             description={step.description}
                             // icon={step.icon}
-                            isCompleted={index <2}
+                            isCompleted={index < 2}
                         />
                     </div>
                 ))}

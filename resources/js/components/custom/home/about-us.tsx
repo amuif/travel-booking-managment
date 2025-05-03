@@ -20,7 +20,7 @@ const AboutUs = () => {
                     When it comes to booking a holiday, we know everyone likes something different - so we've designed our getaways with you in mind.
                     Our vision is to make travel experience special so you can relax knowing we've designed your trip with the utmost care.
                 </p>
-                <Button size="lg" className="bottom-0 flex w-fit p-7 text-2xl mt-6 shadow-xl/30">
+                <Button size="lg" className="shadow-xl/30 bottom-0 mt-6 flex w-fit p-7 text-2xl">
                     Learn More
                 </Button>
             </div>

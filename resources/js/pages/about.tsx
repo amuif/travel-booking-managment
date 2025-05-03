@@ -5,9 +5,9 @@ const About = () => {
     return (
         <div>
             <Head title="About Us"></Head>
-            <AboutUsPage/>
+            <AboutUsPage />
         </div>
     );
 };
 
-export default About
+export default About;

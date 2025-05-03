@@ -1,7 +1,7 @@
 import { Button } from '../../ui/button';
+import { CustomDatePicker } from '../../ui/date-picker';
 import { Input } from '../../ui/input';
 import { Label } from '../../ui/label';
-import { CustomDatePicker } from '../../ui/date-picker';
 
 const Landing = () => {
     return (

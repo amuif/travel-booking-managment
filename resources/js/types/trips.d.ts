@@ -7,5 +7,5 @@ export interface TTrips {
     to_city: string;
     updated_at: Date;
     user_id: string;
-    user:TUser;
+    user: TUser;
 }

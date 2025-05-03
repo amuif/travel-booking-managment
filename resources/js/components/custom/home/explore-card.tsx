@@ -10,15 +10,15 @@ const ExploreSection = () => {
                 The best things in travel aren&apos;t things they&apos;re <br />
                 the sun&apos;s first light and last glow on new horizons.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                 <div>
-                    <ImageCard src="cities/dubai.jpg" text="Dubai" className='rounded-lg h-80 w-auto object-fit'/>
+                    <ImageCard src="cities/dubai.jpg" text="Dubai" className="object-fit h-80 w-auto rounded-lg" />
                 </div>
                 <div>
-                    <ImageCard src="cities/greece.jpg" text="Greece"  className='rounded-lg h-80 w-auto  object-fit'/>
+                    <ImageCard src="cities/greece.jpg" text="Greece" className="object-fit h-80 w-auto rounded-lg" />
                 </div>
                 <div>
-                    <ImageCard src="cities/italy.jpg" text="Italy" className='rounded-lg h-80 w-auto  object-fit'/>
+                    <ImageCard src="cities/italy.jpg" text="Italy" className="object-fit h-80 w-auto rounded-lg" />
                 </div>
             </div>
         </div>
