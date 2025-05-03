@@ -7,13 +7,11 @@ import Reviews from '@/components/custom/home/reviews';
 import HoverTextsOnVideo from '@/components/custom/home/video-player';
 import WhatWeDid from '@/components/custom/home/what-we-did';
 import WhatWeDo from '@/components/custom/home/what-we-do';
-import { type SharedData } from '@/types';
-import { TTrips } from '@/types/trips';
 import { TUser } from '@/types/users';
-import { Head, usePage } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 
-export default function Home({ trips, users }: { trips: TTrips[]; users: TUser[] }) {
-    const { auth } = usePage<SharedData>().props;
+export default function Home({ users }: { users: TUser[] }) {
+    //const { auth } = usePage<SharedData>().props;
     // console.log(users);
     return (
         <div className="flex flex-col gap-4 space-y-14 md:gap-10 lg:gap-14">
@@ -23,7 +21,6 @@ export default function Home({ trips, users }: { trips: TTrips[]; users: TUser[]
             </Head>
             <div className="flex flex-col gap-10">
                 {' '}
-
                 <Landing />
                 <HoverTextsOnVideo />
             </div>

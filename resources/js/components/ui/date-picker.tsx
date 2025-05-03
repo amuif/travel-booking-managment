@@ -20,7 +20,6 @@ interface CustomDatePickerProps{
 
 export const CustomDatePicker: React.FC<CustomDatePickerProps> = ({
     className = '',
-    ...props
   }) =>{
   const [date, setDate] = React.useState<Date>()
 
