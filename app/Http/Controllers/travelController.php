@@ -22,9 +22,5 @@ class travelController extends Controller
     {
         return Inertia::render('explore');
     }
-    public function flights()
-    {
-        $trips = Trips::orderBy('created_at', 'desc')->get();
-        return Inertia::render('flights', ['trips' => $trips]);
-    }
+   
 }

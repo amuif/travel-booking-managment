@@ -117,7 +117,7 @@ const ExploreLanding = () => {
                         className="cursor-pointer"
                         onClick={() => {
                             if (!destination.from && !destination.to) return;
-                            window.location.href = `/flights?from=${destination.from.replace(/\s+/g, '_')}&to=${destination.to.replace(/\s+/g, '_')}`;
+                            window.location.href = `/flights?from=${destination.from.replace(/\s+/g, '_')}&to=${destination.to.replace(/\s+/g, '_')}&adults=${totalPerson}`;
                         }}
                     >
                         <LucideSearch />

@@ -1,11 +1,14 @@
-export interface TTrips {
+export type Trips = {
     id: number;
-    created_at: Date;
-    departure_date: Date;
+    user_id: number;
     from_city: string;
-    return_date: Date;
     to_city: string;
-    updated_at: Date;
-    user_id: string;
-    user: TUser;
-}
+    departure_date: string;
+    return_date: string;
+    airlines: 'Ethiopian Airlines' | 'Emirates';
+    price: number;
+    take_off_time: string;
+    landing_time: string;
+    created_at?: string;
+    updated_at?: string;
+};

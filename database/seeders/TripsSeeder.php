@@ -13,6 +13,6 @@ class TripsSeeder extends Seeder
      */
     public function run(): void
     {
-        Trips::factory()->count(10)->create();
+        Trips::factory()->count(100)->create();
     }
 }

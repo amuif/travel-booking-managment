@@ -1,9 +1,12 @@
-import FlightsLanding from '@/components/custom/flights/flights-landing';
+import FlightsLanding, { FlightsLandingProps } from '@/components/custom/flights/flights-landing';
+import { Head } from '@inertiajs/react';
 
-const Flights = () => {
+const Flights = ({ trips }: FlightsLandingProps) => {
+    console.log(trips);
     return (
         <div>
-            <FlightsLanding />
+            <Head title="Flights" />
+            <FlightsLanding trips={trips} />
         </div>
     );
 };
