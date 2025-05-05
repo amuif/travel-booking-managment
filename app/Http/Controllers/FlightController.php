@@ -9,7 +9,7 @@ use Inertia\Inertia;
 class FlightController extends Controller
 {
     protected $aviationStack;
-    
+
     public function __construct(AviationStackService $aviationStack)
     {
         $this->aviationStack = $aviationStack;
@@ -32,5 +32,9 @@ class FlightController extends Controller
         return Inertia::render('explore', [
             'flights' => $flights['data'] ?? [],
         ]);
+    }
+    public function flights()
+    {
+        return Inertia::render('flights');
     }
 }
