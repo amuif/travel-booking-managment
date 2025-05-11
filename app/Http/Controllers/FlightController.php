@@ -10,8 +10,8 @@ class FlightController extends Controller
 {
     public function flights()
     {
-
-        $trips = Trips::all();
-        return Inertia::render('flights', ['trips' => $trips]);
+        $AllTrips = Trips::all();
+        $trips = Trips::paginate(15);
+        return Inertia::render('flights', ['trips' => $trips, 'AllTrips' => $AllTrips]);
     }
 }

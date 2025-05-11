@@ -21,7 +21,7 @@ interface CustomDatePickerProps{
 export const CustomDatePicker: React.FC<CustomDatePickerProps> = ({
     className = '',
   }) =>{
-  const [date, setDate] = React.useState<Date>()
+  const [date, setDate] = React.useState<Date>(new Date())
 
   return (
     <Popover>

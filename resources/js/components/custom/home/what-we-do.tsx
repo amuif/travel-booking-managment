@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import { Link } from '@inertiajs/react';
 
 const WhatWeDo = () => {
     return (
@@ -15,9 +16,11 @@ const WhatWeDo = () => {
                     Your passion is what drives us. Whatever you want to hunt for rare truffles in Tuscany, track the Great Migration on a mobile
                     camping safari, or learn aboriginal art from a Maori chief in New Zeland - we know how to make your dreams comes true.
                 </p>
-                <Button size="lg" className="shadow-xl/30 bottom-0 mt-6 flex w-fit p-7 text-2xl">
-                    Let's explore
-                </Button>
+                <Link href="/explore">
+                    <Button size="lg" className="shadow-xl/30 bottom-0 mt-6 flex w-fit cursor-pointer p-7 text-2xl">
+                        Let's explore
+                    </Button>
+                </Link>
             </div>
             <div className="order-2 lg:order-1">
                 <img

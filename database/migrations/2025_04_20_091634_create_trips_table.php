@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('to_city');
             $table->date('departure_date')->nullable();
             $table->date('return_date')->nullable();
+            $table->string('to_airport')->nullable();
+            $table->string('duration');
             $table->string('airlines');
             $table->string('price');
             $table->time('take_off_time');

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Button } from '../ui/button';
 
 interface menuItemsProps {
     id: string;
@@ -53,19 +52,16 @@ export const DesktopNavigationMenu = () => {
         <div className="mx-auto flex w-[95%] items-center justify-between pb-6 lg:pb-10">
             <div className="text-xl font-extrabold md:text-3xl">
                 {' '}
-                <p>
+                <p className="whitespace-nowrap">
                     Tour <span className="text-primary">Nest</span>
                 </p>
             </div>
-            <div className="flex gap-10 text-xl">
+            <div className="mx-auto flex gap-10 text-xl">
                 {menuItems.map(({ id, name, link }) => (
                     <a key={id} href={link}>
                         {name}
                     </a>
                 ))}
-            </div>
-            <div>
-                <Button className="bg-primary h-[50px] w-[150px] px-5 py-3 text-lg">LOGIN</Button>
             </div>
             {/* <ModeToggle /> */}
         </div>
