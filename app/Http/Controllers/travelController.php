@@ -22,5 +22,4 @@ class travelController extends Controller
     {
         return Inertia::render('explore');
     }
-   
 }

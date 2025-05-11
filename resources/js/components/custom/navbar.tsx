@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Button } from '../ui/button';
 
 interface menuItemsProps {
     id: string;
@@ -24,7 +25,7 @@ const menuItems: menuItemsProps[] = [
     {
         id: '4',
         name: 'Blog',
-        link: '/blog',
+        link: '/blogs',
     },
 ];
 const NavigationMenu = () => {
@@ -64,6 +65,9 @@ export const DesktopNavigationMenu = () => {
                 ))}
             </div>
             {/* <ModeToggle /> */}
+            <Button variant="ghost" onClick={() => (window.location.href = '/contact')}>
+                Contact Us
+            </Button>
         </div>
     );
 };

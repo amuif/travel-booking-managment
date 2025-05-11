@@ -1,3 +1,4 @@
+import { PageProps as InertiaPageProps } from '@inertiajs/inertia';
 import { LucideIcon } from 'lucide-react';
 import type { Config } from 'ziggy-js';
 
@@ -40,4 +41,12 @@ export interface User {
     created_at: string;
     updated_at: string;
     [key: string]: unknown; // This allows for additional properties...
+}
+
+declare module '@inertiajs/inertia' {
+    interface PageProps extends InertiaPageProps {
+        flash: {
+            success?: string;
+        };
+    }
 }

@@ -21,10 +21,12 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
-            
+
         ]);
 
+        $this->call([
+            BlogsSeeder::class,
+        ]);
         User::factory()->count(10)->hasTrips(1)->create();
-
     }
 }

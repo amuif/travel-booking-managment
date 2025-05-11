@@ -3,11 +3,11 @@ import '../css/app.css';
 import { createInertiaApp } from '@inertiajs/react';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { createRoot } from 'react-dom/client';
+import { Toaster } from 'sonner';
 import { Footer } from './components/custom/footer';
 import NavigationMenu from './components/custom/navbar';
 import { ThemeProvider } from './components/theme-provider';
 import { initializeTheme } from './hooks/use-appearance';
-
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
 createInertiaApp({
@@ -18,6 +18,8 @@ createInertiaApp({
 
         root.render(
             <>
+                {' '}
+                <Toaster />
                 <NavigationMenu />
                 <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
                     <App {...props} />

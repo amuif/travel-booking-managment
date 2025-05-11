@@ -44,12 +44,12 @@ class UserFactory extends Factory
 
         return [
             'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
+            'email' => $this->faker->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
             'remember_token' => Str::random(10),
             'profile_img' => $this->faker->randomElement($defaultImages),
-            // 'image'=>fake()->i 
+            // 'image'=>fake()->i
             // 'trips_id' => Trips::inRandomOrder()->first()->id,
         ];
     }
